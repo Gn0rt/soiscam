@@ -41,6 +41,20 @@ body {
 
 /* End: Button */
 
+/* Begin: Title style */
+.title {
+    font-size: 30px;
+    font-weight: 800;
+    color: transparent;
+    background: var(--gradientColor);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* End: Title style */
+
+
+
 /* Begin: Header */
 .header {
     margin-top: 25px;
