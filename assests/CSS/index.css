@@ -32,7 +32,7 @@
     display: flex;
     align-items: center;
     padding: 5px;
-    padding-left: 19px;
+    margin-inline: auto;
 }
 
 .form__search-input {
@@ -41,6 +41,9 @@
     border: none;
     outline: none;
     color: var(--textColor);
+    padding-left: 19px;
+    padding-right: 24px;
+
 }
 
 .form__search-btn {
@@ -48,3 +51,86 @@
 }
 
 /* End: Content */
+
+/* Begin: Scammer */
+.alert-scam {
+    background-color: var(--bgColor2);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 138px;
+}
+
+.alert-scam__header {
+    padding: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+
+}
+
+.alert-scam__title {
+    font-size: 30px;
+    font-weight: 800;
+    color: transparent;
+    background: var(--gradientColor);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.alert-scam__desc {
+    color: var(--subTextColor);
+    margin-top: 8px;
+}
+
+.scammer__list {
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.scammer__item {
+    background-color: var(--bgColor3);
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.scammer__name {
+    font-weight: 600;
+}
+
+.scammer_date {
+    color: var(--subTextColor);
+}
+
+
+
+.scammer__item:hover::before {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
+.scammer__item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: auto;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #fff;
+    opacity: 0.1;
+    z-index: -1;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+/* End: Scammer */
