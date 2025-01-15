@@ -24,7 +24,8 @@ body {
     background: var(--gradientColor);
     font-size: 16px;
     color: var(--textBtnColor);
-
+    border: none;
+    outline: none;
 }
 
 .btn:hover {
